@@ -30,4 +30,8 @@
   <li>Customers who register and place their first order in July 2017 have a high retention rate (up to 48.1%) after 5 months of operation. </li>
   <li>Customers who register and place their first order in April 2047 have a stable and relatively high retention rate: 45.1% (4th month), 42.1% (5th month), and 42.7% (7th month).</li>
   <li>Customers who register and place their first order in May 2017 also have a fairly high and stable retention rate: 40.4%, 39% and 41.3% in the 2nd, 3 rd and 4th month activities.</li>
+  <li>Looking at the above insights, we can see that customers who start ordering from mid-year 4, 5, 6, 7, 8 tend to order statble, and relatively higher than the rest months of the year.</li>
+  <li>Customer who place orders at the beginning of January and February only show stablility, nothing special.</li>
+  <li>KPMG's year-to-date retention rate is quite good, all 30% or more (except 11st month at 25.5%)</li>
 </ul>
+<h1>Recommendations</h1>
