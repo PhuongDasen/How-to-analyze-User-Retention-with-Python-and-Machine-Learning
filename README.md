@@ -35,3 +35,7 @@
   <li>KPMG's year-to-date retention rate is quite good, all 30% or more (except 11st month at 25.5%)</li>
 </ul>
 <h1>Recommendations</h1>
+<ul>
+  <li>There should be attractive preferential policies for customers in the first months of the year to increase teh order rate (retention) over the months.</li>
+  <li>The Mid-year months have higher retention rates than other months -> need to dive into why (with relevant data, and visualizatin of other data) to apply to other months of the year.</li>
+</ul>
