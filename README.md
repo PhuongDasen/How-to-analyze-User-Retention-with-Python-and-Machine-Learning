@@ -1,6 +1,5 @@
 # [PYTHON] Cohort Analysis How to analyze User Retention
 <h1>I. Introduction</h1>
-<br>
 <h2>1. About Cohort Analysis</h2>
   <b>What is cohort and cohort analysis?</b>
   <ul>
@@ -25,6 +24,7 @@
 </ul>
 <h1>II. Data Visualization with Python</h1>
 - MoM Retention Rate for Customer Transaction Data <br>
+<img width="829" alt="Screenshot 2025-05-12 at 09 35 44" src="https://github.com/user-attachments/assets/0472e084-7b7c-41b0-a584-d3158f6265fa" />
 <h1>III. Insights</h1>
 <ul>
   <li>Customers who register and place their first order in July 2017 have a high retention rate (up to 48.1%) after 5 months of operation. </li>
