@@ -20,6 +20,8 @@
     </ul>
 <h2>2. Business Questions</h2>
 <ul>
+  <li>One ecommerce company has a project on predicting churned users in order to offer potential
+promotions.</li>
   <li>Using Python to analyze transaction data from KPMG and creating a cohort that allows stakeholders to assess user engagement starting from their first transaction.</li>
 </ul>
 <h1>II. Data Visualization with Python</h1>
