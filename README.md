@@ -46,13 +46,13 @@ promotions.</li>
 - - Format: .csv
 ## ⚒️Main Process 
 🔍 Import libraries<br>
-<img width="700" alt="Screenshot 2025-07-03 at 3 04 53 PM" src="https://github.com/user-attachments/assets/8977273f-685a-438e-8511-3a6c13240f8e" /><br>
+
 
 📤 Load KPMG dataset <br>
 <img width="700" alt="Screenshot 2025-07-03 at 3 05 00 PM" src="https://github.com/user-attachments/assets/38b0684f-1910-4188-92f4-1318a8d644dc" /><br>
 
 🔍 Filtering oders_status is approved<br>
-<img width="700" alt="Screenshot 2025-07-03 at 3 11 57 PM" src="https://github.com/user-attachments/assets/3a8af437-532f-4577-b68a-f724e09ecd32" />
+<img width="700" alt="Screenshot 2025-07-03 at 3 04 53 PM" src="https://github.com/user-attachments/assets/8977273f-685a-438e-8511-3a6c13240f8e" /><br>
 
 
 📤 Create a function to get month from transaction_date <br>
