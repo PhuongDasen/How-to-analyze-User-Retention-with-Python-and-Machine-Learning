@@ -46,21 +46,26 @@ promotions.</li>
 - - Format: .csv
 ## ⚒️Main Process 
 🔍 Import libraries<br>
-
+<img width="700" alt="Screenshot 2025-07-03 at 3 04 53 PM" src="https://github.com/user-attachments/assets/8977273f-685a-438e-8511-3a6c13240f8e" /><br>
 
 📤 Load KPMG dataset <br>
-
+<img width="700" alt="Screenshot 2025-07-03 at 3 05 00 PM" src="https://github.com/user-attachments/assets/38b0684f-1910-4188-92f4-1318a8d644dc" /><br>
 
 🔍 Filtering oders_status is approved<br>
+<img width="700" alt="Screenshot 2025-07-03 at 3 11 57 PM" src="https://github.com/user-attachments/assets/3a8af437-532f-4577-b68a-f724e09ecd32" />
 
-<img width="700" alt="Screenshot 2025-07-02 at 10 48 27 AM" src=/><br>
 
 📤 Create a function to get month from transaction_date <br>
-<img width="700" alt="Screenshot 2025-07-02 at 10 48 37 AM" src="https://github.com/user-attachments/assets/90f1680e-03d1-45fb-9596-fd8d5aef1d94" /><br>
+<img width="700" alt="Screenshot 2025-07-03 at 3 09 31 PM" src="https://github.com/user-attachments/assets/a0140e9f-a019-4f93-8616-8aa497c46e5e" />
 
-🔍  Revenue by traffic source by week, by month in June 2017<br>
 
-<img width="700" alt="Screenshot 2025-07-02 at 10 49 31 AM" src="https://github.com/user-attachments/assets/325df9d7-17be-47e5-a37a-13a014ac8ef2" /><br>
+🔍 Convert transaction date data type: from string to datetime<br>
+<img width="700" alt="Screenshot 2025-07-03 at 3 09 37 PM" src="https://github.com/user-attachments/assets/5c9934e7-a4e6-4f4a-b821-c17e11aeb85a" />
+
+📤 Create tarnsaction_date column based on month and store in TransactionMonth
+
+
+
 📤 Query Output <br>
 <img width="700" alt="Screenshot 2025-07-02 at 10 49 46 AM" src="https://github.com/user-attachments/assets/2be72812-1e12-439f-8229-c3da1e06ed7f" /><br>
 
