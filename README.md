@@ -5,154 +5,15 @@
 Author: Phuong Dasen<br>
 Tool: Python and Machine Learning<br>
 
-## 📑 Inhaltsverzeichnis
+## 📌 Table of Contents
+- [📌 Background & Overview](#-background--overview)
+- [📁 Dataset Description & Data Structure](#-dataset-description--data-structure)
+- [🧠 Design Thinking Process](#-design-thinking-process)
+- [📊 Key Insights & Visualizations](#-key-insights--visualizations)
+- [🔍 Final Conclusion & Recommendations](#-final-conclusion--recommendations) 
+  
+## [📌 Background & Overview](#-background--overview)
 
-- [📌 Hintergrund & Überblick](#hintergrund--überblick)  
-- [📁 Datensatzbeschreibung & Datenstruktur](#datensatzbeschreibung--datenstruktur)  
-- [🧠 Design-Thinking-Prozess](#design-thinking-prozess)  
-- [📊 Zentrale Erkenntnisse & Visualisierungen](#zentrale-erkenntnisse--visualisierungen)  
-- [🔍 Abschließende Schlussfolgerung & Empfehlungen](#abschließende-schlussfolgerung--empfehlungen)  
-
----
-## 📌 Hintergrund und Überblick 
-<p><u><strong>1. Über RFM-Analyse</strong></u></p>
-   <p><strong>Warum RFM?</strong><br>
-    - RFM ist eine Marketinganalysetechnik, die für Recency (Aktualität), Frequency (Häufigkeit) und Monetary Value (Geldwert) steht.<br>
-        - <strong>Aktualität</strong>: wie oft ein Kunde in letzter Zeit eingekauft hat.<br>
-        - <strong>Häufigkeit</strong>: wie oft ein Kunde eingekauft hat.<br>
-        - <strong>Monetärer Wert</strong>: den Gesamtbetrag, den ein Kunde für seine Einkäufe ausgegeben hat.<br>
-    - RFM wird verwendet, um Kunden auf der Grundlage ihres Kaufverhaltens zu identifizieren und zu kategorisieren, d. h. wie häufig und kürzlich sie eingekauft haben und wie hoch der Geldwert dieser Einkäufe ist.<br>
-     
-<strong>Wie?</strong><br>
-Bei der RFM-Analyse werden die Kunden anhand von drei Faktoren bewertet (Aktualität, Häufigkeit - wie oft, Geldwert - wie viel) und dann auf der Grundlage der Kombination der RFM-Werte eingestuft<br>
-
-**Referenz**
-- https://www.putler.com/rfm-analysis
-
-### Ziel:
-## 📖 Was ist dieses Projekt?
-- Dieses Projekt analysiert Kundenverhalten im E-Commerce mithilfe von RFM-Segmentierung und Churn-Prediction.
-- Ziel ist es, datengestützte Maßnahmen zur Kundenbindung und Umsatzsteigerung zu entwickeln.
-
-## 👤 Für wen ist dieses Projekt?
-- Das Projekt richtet sich an das Marketing- und CRM-Team eines E-Commerce-Unternehmens.
-- Es unterstützt Entscheidungsträger dabei, Kundensegmente besser zu verstehen und gezielte Kampagnen durchzuführen.
-
-## ❓ Geschäftsfrage von dem Projekt?
-- Welche Kundengruppen sind besonders wertvoll oder gefährdet, zur Konkurrenz abzuwandern?
-- Wie können Unternehmen datenbasiert reagieren, um Kunden zu halten oder zurückzugewinnen?
-
-### 📁 Datensatzbeschreibung & Datenstruktur
-## 📌 Datenquelle<br>
-Quelle: Bereitgestellter Datensatz für die Analyse des E-Commerce-Einzelhandels<br>
-Umfang: 541.910 Zeilen × 8 Spalten (Tabelle 1: E-Commerce Retail), zusätzliche Segmentierungsdetails in Tabelle 2<br>
-Format: .xlsx (Excel-Datei mit zwei Tabellenblättern)<br>
-
-## 📊 Datenstruktur & Beziehungen
-#### 1️⃣ Verwendete Tabellen:
-Der Datensatz besteht aus zwei Tabellen:<br>
-
-<strong>Tabelle 1: Ecommerce Retail</strong><br>
-Diese Tabelle enthält Transaktionsdaten eines britischen Onlinehändlers im Zeitraum von Dezember 2010 bis Dezember 2011. Sie eignet sich besonders gut zur Analyse des Kaufverhaltens und der Kundensegmentierung, da viele Kunden Großhändler sind.<br>
-
-<strong>Tabelle 2: Segmentation</strong><br>
-Diese Tabelle enthält RFM-Scores zur Klassifizierung von Kunden in Segmente. Jeder Score wird einem Kundenprofil wie „Loyaler Kunde“ oder „Gefährdeter Kunde“ zugeordnet.<br>
-
-#### 2️⃣ Tabellenschema & Datenvorschau
-<details>
-<summary>🔽 Tabelle 1: Tabellenbeschreibung anzeigen</summary>
-
-<br>
-
-| **Spaltenname** | **Datentyp**     | **Beschreibung**                                                                 |
-|------------------|------------------|----------------------------------------------------------------------------------|
-| InvoiceNo        | object           | Eindeutige Rechnungsnummer für jede Transaktion (6-stellig). Beginnt sie mit „C“, handelt es sich um eine Stornierung. |
-| StockCode        | object           | Eindeutiger Produktcode (5-stellig).                                             |
-| Description      | object           | Produktname.                                                                     |
-| Quantity         | int64            | Anzahl der gekauften Einheiten pro Transaktion.                                  |
-| InvoiceDate      | datetime64[ns]   | Datum und Uhrzeit der Transaktion.                                               |
-| UnitPrice        | float64          | Preis pro Produkteinheit in britischen Pfund.                                    |
-| CustomerID       | float64          | Eindeutige 5-stellige Kennung für jeden Kunden.                                  |
-| Country          | object           | Name des Landes, in dem der Kunde wohnt.                                         |
-
-</details>
-
-<details>
-<summary>🔽 Tabelle 2: RFM-Segmentierung anzeigen</summary>
-
-<br>
-
-| **Segment**              | **RFM Scores**                                                                                                                                                    |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Champions                | 555, 554, 544, 545, 454, 455, 445                                                                                                                                    |
-| Loyale Kunden            | 543, 444, 435, 355, 354, 345, 344, 335                                                                                                                              |
-| Potenzielle Loyale       | 553, 551, 552, 541, 542, 533, 532, 531, 452, 451, 442, 441, 431, 453, 433, 432, 423, 353, 352, 351, 342, 341, 333, 323                                                 |
-| Neue Kunden              | 512, 511, 422, 421, 412, 411, 311                                                                                                                                   |
-| Vielversprechend         | 525, 524, 523, 522, 521, 515, 514, 513, 425, 424, 413, 414, 415, 315, 314, 313                                                                                      |
-| Braucht Aufmerksamkeit   | 535, 534, 443, 434, 343, 334, 325, 324                                                                                                                              |
-| Einschlafend             | 331, 321, 312, 221, 213, 231, 241, 251                                                                                                                              |
-| Gefährdet                | 255, 254, 245, 244, 253, 252, 243, 242, 235, 234, 225, 224, 153, 152, 145, 143, 142, 135, 134, 133, 125, 124                                                          |
-| Nicht verlieren!         | 155, 154, 144, 214, 215, 115, 114, 113                                                                                                                              |
-| Winterschlafend          | 332, 322, 233, 232, 223, 222, 132, 123, 122, 212, 211                                                                                                                |
-| Verlorene Kunden         | 111, 112, 121, 131, 141, 151                                                                                                                                         |
-
-</details>
-
-## ⚒️ Hauptprozess
-## 📌 Bibliotheken importieren
-<img width="700" alt="Screenshot 2025-07-01 at 9 04 11 AM" src="https://github.com/user-attachments/assets/eff40e30-91c4-48ff-91a5-0a8303acadb7" />
-<img width="700" alt="Screenshot 2025-07-01 at 9 16 29 AM" src="https://github.com/user-attachments/assets/0aa3014d-6080-457b-b787-a95169d5d593" />
-<img width="700" alt="Screenshot 2025-07-01 at 9 15 13 AM" src="https://github.com/user-attachments/assets/902a0c25-414a-4fb0-b113-04f3c3db0b2b" />
-<img width="700" alt="Screenshot 2025-07-01 at 9 15 23 AM" src="https://github.com/user-attachments/assets/1ce2522d-662c-4c34-a172-f755421e32f9" />
-
-## 📌 Explorative Datenanalyse (EDA)
-<img width="700" alt="Screenshot 2025-07-01 at 9 17 08 AM" src="https://github.com/user-attachments/assets/5119454c-5231-40a6-899d-af6b81bc56ad" /><br>
-
-🎯 **Ergebnisanalyse:**  
-	1. Die Daten haben 541.909 Zeilen und 8 Spalten<br>
-	2. Die Spalte CustomerID: fehlen rund 135.000 Einträge (541.909 - 406.829) --> entfernen <br>
-	3. Die Spalte Description: fehlen etwa 1.454 Beschreibungen --> kann halten, weil sie nicht auf RFM beeinflusst.<br>
-	4. Die Datentypen sind größtenteils korrekt zugeordnet, z. B. InvoiceDate als datetime64, Quantity als int64, und UnitPrice als float64.<br>
- 	5. Inkorrekte Werte: <br>
-      * Bestandscode: 54487 Zeilen -> Zeilen mit fehlerhaften Daten löschen, da die anderen Codes Geschenke sein können, wenn der Produktcode nicht aus fünf Ganzzahlen besteht.<br>
-      * Menge: 10587 Zeilen -> Zeilen mit fehlerhaften Daten löschen, da dies das RFM-Modell beeinflusst (Menge darf nicht <= 0 sein).<br>
-      * Einzelpreis: 2512 Zeilen -> Zeilen mit fehlerhaften Daten löschen, da dies das RFM-Modell beeinflusst (Preis darf nicht <= 0 sein).<br>
-      * Bestellungen mit Rechnungsnummern, die mit „C“ beginnen, entfernen.<br>
-<img width="700" alt="Screenshot 2025-07-01 at 9 57 26 AM" src="https://github.com/user-attachments/assets/59b5812f-7226-4d04-b8cd-39c0d9aae183" />
-<img width="700" alt="Screenshot 2025-07-01 at 9 57 40 AM" src="https://github.com/user-attachments/assets/466ac77d-6747-413b-b105-087b493d976e" />
-<img width="700" alt="Screenshot 2025-07-01 at 9 57 52 AM" src="https://github.com/user-attachments/assets/c23d772f-d253-4b75-a06a-b9cea020f87d" />
-
-## 📌 RFM <br> 
-<img width="700" alt="Screenshot 2025-07-01 at 9 58 03 AM" src="https://github.com/user-attachments/assets/c0f308fc-140b-4961-ae98-636da60b6628" />
-<img width="700" alt="Screenshot 2025-07-01 at 10 01 21 AM" src="https://github.com/user-attachments/assets/6ed79069-f06f-4421-9be0-bc6cf00c1797" />
-<img width="700" alt="Screenshot 2025-07-01 at 10 01 29 AM" src="https://github.com/user-attachments/assets/ca372425-9f27-47d5-a3ec-51fdbc0a505e" />
-<img width="700" alt="Screenshot 2025-07-01 at 10 06 15 AM" src="https://github.com/user-attachments/assets/d0fcab37-7958-4ff8-a44b-a954e7683f34" />
-<img width="700" alt="Screenshot 2025-07-01 at 10 06 20 AM" src="https://github.com/user-attachments/assets/d143e8e8-bec4-47f9-9fde-59101fbc3e06" />
-<img width="700" alt="Screenshot 2025-07-01 at 10 06 30 AM" src="https://github.com/user-attachments/assets/87a61e4a-3afa-4532-ac2a-bc975b9b4fe7" />
-<img width="700" alt="Screenshot 2025-07-01 at 10 06 37 AM" src="https://github.com/user-attachments/assets/be5fd83f-4460-4905-bd0e-3aecf3b7a52e" />
-<img width="700" alt="Screenshot 2025-07-01 at 10 14 15 AM" src="https://github.com/user-attachments/assets/e0f50a6d-451d-41f9-9330-1a61803471bc" /><br>
-<img width="700" alt="Screenshot 2025-07-01 at 10 14 26 AM" src="https://github.com/user-attachments/assets/6f43f1c6-eae8-43e4-9684-dffe65505538" /><br>
-
-**🎯 Ergebnisanalyse:**
-Die aktuelle Segmentstruktur zeigt, dass nur <strong>~1 von 10 Kunden</strong> hochprofitabel ist, während fast die Hälfte gefährdet ist, komplett verloren zu gehen. Ziel sollte sein, die „Potenzial“-Gruppe zu aktivieren und die „Risiko“-Gruppe zu analysieren oder selektiv zu bearbeiten.
-
-## 📊 Visualisierungen der RFM-Werte (Histogramme)
-1. 
-<img width="700" alt="Screenshot 2025-07-01 at 9 05 27 PM" src= />
-
-
-## 🔎 Insights and Recommemdations 
-
-
-
-
-
-
-
-
-
-
-<h1>I. Introduction</h1>
 <h2>1. About Cohort Analysis</h2>
   <b>What is cohort and cohort analysis?</b>
   <ul>
@@ -177,6 +38,69 @@ Die aktuelle Segmentstruktur zeigt, dass nur <strong>~1 von 10 Kunden</strong> h
 promotions.</li>
   <li>Using Python to analyze transaction data from KPMG and creating a cohort that allows stakeholders to assess user engagement starting from their first transaction.</li>
 </ul>
+
+## [📁 Dataset Description & Data Structure](#📁-dataset-description--data-structure)  
+
+### 📌 Data Source
+- Source: KPMG Dataset
+- - Format: .csv
+## ⚒️Main Process 
+🔍 Import libraries<br>
+
+
+📤 Load KPMG dataset <br>
+
+
+🔍 Filtering oders_status is approved<br>
+
+<img width="700" alt="Screenshot 2025-07-02 at 10 48 27 AM" src=/><br>
+
+📤 Create a function to get month from transaction_date <br>
+<img width="700" alt="Screenshot 2025-07-02 at 10 48 37 AM" src="https://github.com/user-attachments/assets/90f1680e-03d1-45fb-9596-fd8d5aef1d94" /><br>
+
+🔍  Revenue by traffic source by week, by month in June 2017<br>
+
+<img width="700" alt="Screenshot 2025-07-02 at 10 49 31 AM" src="https://github.com/user-attachments/assets/325df9d7-17be-47e5-a37a-13a014ac8ef2" /><br>
+📤 Query Output <br>
+<img width="700" alt="Screenshot 2025-07-02 at 10 49 46 AM" src="https://github.com/user-attachments/assets/2be72812-1e12-439f-8229-c3da1e06ed7f" /><br>
+
+🔍Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017<br>
+
+<img width="700" alt="Screenshot 2025-07-02 at 10 50 13 AM" src="https://github.com/user-attachments/assets/025c3b49-1eae-4243-8282-c88b2914ac68" /><br>
+📤 Query Output <br>
+<img width="700" alt="Screenshot 2025-07-02 at 10 50 39 AM" src="https://github.com/user-attachments/assets/58efd013-c7c7-4969-92ae-056fa72e5936" /><br>
+
+🔍 Average number of transactions per user that made a purchase in July 2017<br>
+
+<img width="700" alt="Screenshot 2025-07-02 at 11 15 23 AM" src="https://github.com/user-attachments/assets/e11d0b9d-ba4d-4a9f-b0f2-0dd5f2d34384" /><br>
+📤 Query Output <br>
+<img width="700" alt="Screenshot 2025-07-02 at 10 50 39 AM" src="https://github.com/user-attachments/assets/58efd013-c7c7-4969-92ae-056fa72e5936" /><br>
+
+🔍 Average amount of money spent per session. Only include purchaser data in July 2017<br>
+
+<img width="700" alt="Screenshot 2025-07-02 at 11 15 42 AM" src="https://github.com/user-attachments/assets/7282c299-b9c6-4f9d-af98-3be893990af8" /><br>
+📤 Query Output <br>
+<img width="700" alt="Screenshot 2025-07-02 at 11 15 54 AM" src="https://github.com/user-attachments/assets/e6d781cb-5165-4c37-bfc0-ef5d8eb045f6" /><br>
+
+🔍 Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered<br>
+
+<img width="700" alt="Screenshot 2025-07-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/33e22dc9-4180-4b18-ac4f-a0f3e4ce6638" /><br>
+📤 Query Output <br>
+<img width="700" alt="Screenshot 2025-07-02 at 11 16 26 AM" src="https://github.com/user-attachments/assets/3859b8d9-df0d-4cf5-a00e-755e4047f25a" /><br>
+
+🔍Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017<br>
+
+<img width="1000" alt="Screenshot 2025-07-02 at 11 17 10 AM" src="https://github.com/user-attachments/assets/2cf99014-34d5-47ac-bf88-ba0055109a4a" /><br>
+📤 Query Output <br>
+<img width="900" alt="Screenshot 2025-07-02 at 11 17 21 AM" src="https://github.com/user-attachments/assets/f1ed82f2-8b1d-47e8-a580-c8209f0d4351" />
+
+## 🔎 Final Conclusion & Recommendations
+
+
+
+
+
+
 <h1>II. Data Visualization with Python</h1>
 - MoM Retention Rate for Customer Transaction Data <br>
 <img width="829" alt="Screenshot 2025-05-12 at 09 35 44" src="https://github.com/user-attachments/assets/0472e084-7b7c-41b0-a584-d3158f6265fa" />
