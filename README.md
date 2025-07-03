@@ -1,4 +1,4 @@
-# [MACHINE LEARNING] Cohort Analysis: How to analyze User Retention
+# How to analyze User Retention with Python and Machine Learning
 <h1>I. Introduction</h1>
 <h2>1. About Cohort Analysis</h2>
   <b>What is cohort and cohort analysis?</b>
