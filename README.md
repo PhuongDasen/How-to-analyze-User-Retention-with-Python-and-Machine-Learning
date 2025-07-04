@@ -8,8 +8,8 @@ Tool: Python and Machine Learning<br>
 ## 📌 Table of Contents
 - [📌 Background & Overview](#-background--overview)
 - [📁 Dataset Description & Data Structure](#-dataset-description--data-structure)
-- [🧠 Design Thinking Process](#-design-thinking-process)
-- [📊 Key Insights & Visualizations](#-key-insights--visualizations)
+- [⚒️ Main Process](#-main-Process)
+- [📊 Visualizations](#-visualizations)
 - [🔍 Final Conclusion & Recommendations](#-final-conclusion--recommendations) 
   
 ## [📌 Background & Overview](#-background--overview)
@@ -43,73 +43,31 @@ promotions.</li>
 
 ### 📌 Data Source
 - Source: KPMG Dataset
-- - Format: .csv
-## ⚒️Main Process 
-🔍 Import libraries<br>
+- Format: .csv
+  
+## [⚒️ Main Process](#-main-Process)
 
+<img width="950" alt="Screenshot 2025-07-04 at 9 07 17 AM" src="https://github.com/user-attachments/assets/198c41e0-1753-4ed4-88bd-75669f76dc91" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 07 24 AM" src="https://github.com/user-attachments/assets/29442000-bee7-4815-84f6-141868980947" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 07 31 AM" src="https://github.com/user-attachments/assets/f33ab52e-b127-44e6-bd9a-40ffffc65577" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 07 38 AM" src="https://github.com/user-attachments/assets/77b77269-3a31-4c96-a52d-4d694f72cbb5" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 07 50 AM" src="https://github.com/user-attachments/assets/bd2783a4-3903-4fa7-9648-0bb19e69131d" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 07 56 AM" src="https://github.com/user-attachments/assets/98aff66d-2d5c-4fc9-ae1a-501ed7f62563" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 08 03 AM" src="https://github.com/user-attachments/assets/2eb48d52-0207-4d45-951d-7e5b82b7c107" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 08 11 AM" src="https://github.com/user-attachments/assets/303e05b8-44f2-47b8-9815-2f7ab5e115f8" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 08 23 AM" src="https://github.com/user-attachments/assets/e2ad0675-0251-49ec-a9fc-90465ffedd3c" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 08 29 AM" src="https://github.com/user-attachments/assets/56df3524-6974-402d-b3ec-dbefc9190caf" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 08 35 AM" src="https://github.com/user-attachments/assets/39013238-82f6-436b-bbf8-8e0eac54577a" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 08 47 AM" src="https://github.com/user-attachments/assets/0f0c5326-3568-425a-a327-6f5eb7954bed" />
+<img width="950" alt="Screenshot 2025-07-04 at 9 08 55 AM" src="https://github.com/user-attachments/assets/7481d9bd-9714-45f6-800e-f8d787fd993b" />
 
-📤 Load KPMG dataset <br>
-<img width="700" alt="Screenshot 2025-07-03 at 3 05 00 PM" src="https://github.com/user-attachments/assets/38b0684f-1910-4188-92f4-1318a8d644dc" /><br>
+## [📊 Visualizations](#-visualizations) 
 
-🔍 Filtering oders_status is approved<br>
-<img width="700" alt="Screenshot 2025-07-03 at 3 04 53 PM" src="https://github.com/user-attachments/assets/8977273f-685a-438e-8511-3a6c13240f8e" /><br>
-
-
-📤 Create a function to get month from transaction_date <br>
-<img width="700" alt="Screenshot 2025-07-03 at 3 09 31 PM" src="https://github.com/user-attachments/assets/a0140e9f-a019-4f93-8616-8aa497c46e5e" />
-
-
-🔍 Convert transaction date data type: from string to datetime<br>
-<img width="700" alt="Screenshot 2025-07-03 at 3 09 37 PM" src="https://github.com/user-attachments/assets/5c9934e7-a4e6-4f4a-b821-c17e11aeb85a" />
-
-📤 Create tarnsaction_date column based on month and store in TransactionMonth
-
-
-
-📤 Query Output <br>
-<img width="700" alt="Screenshot 2025-07-02 at 10 49 46 AM" src="https://github.com/user-attachments/assets/2be72812-1e12-439f-8229-c3da1e06ed7f" /><br>
-
-🔍Average number of pageviews by purchaser type (purchasers vs non-purchasers) in June, July 2017<br>
-
-<img width="700" alt="Screenshot 2025-07-02 at 10 50 13 AM" src="https://github.com/user-attachments/assets/025c3b49-1eae-4243-8282-c88b2914ac68" /><br>
-📤 Query Output <br>
-<img width="700" alt="Screenshot 2025-07-02 at 10 50 39 AM" src="https://github.com/user-attachments/assets/58efd013-c7c7-4969-92ae-056fa72e5936" /><br>
-
-🔍 Average number of transactions per user that made a purchase in July 2017<br>
-
-<img width="700" alt="Screenshot 2025-07-02 at 11 15 23 AM" src="https://github.com/user-attachments/assets/e11d0b9d-ba4d-4a9f-b0f2-0dd5f2d34384" /><br>
-📤 Query Output <br>
-<img width="700" alt="Screenshot 2025-07-02 at 10 50 39 AM" src="https://github.com/user-attachments/assets/58efd013-c7c7-4969-92ae-056fa72e5936" /><br>
-
-🔍 Average amount of money spent per session. Only include purchaser data in July 2017<br>
-
-<img width="700" alt="Screenshot 2025-07-02 at 11 15 42 AM" src="https://github.com/user-attachments/assets/7282c299-b9c6-4f9d-af98-3be893990af8" /><br>
-📤 Query Output <br>
-<img width="700" alt="Screenshot 2025-07-02 at 11 15 54 AM" src="https://github.com/user-attachments/assets/e6d781cb-5165-4c37-bfc0-ef5d8eb045f6" /><br>
-
-🔍 Other products purchased by customers who purchased product "YouTube Men's Vintage Henley" in July 2017. Output should show product name and the quantity was ordered<br>
-
-<img width="700" alt="Screenshot 2025-07-02 at 11 16 11 AM" src="https://github.com/user-attachments/assets/33e22dc9-4180-4b18-ac4f-a0f3e4ce6638" /><br>
-📤 Query Output <br>
-<img width="700" alt="Screenshot 2025-07-02 at 11 16 26 AM" src="https://github.com/user-attachments/assets/3859b8d9-df0d-4cf5-a00e-755e4047f25a" /><br>
-
-🔍Calculate cohort map from product view to addtocart to purchase in Jan, Feb and March 2017<br>
-
-<img width="1000" alt="Screenshot 2025-07-02 at 11 17 10 AM" src="https://github.com/user-attachments/assets/2cf99014-34d5-47ac-bf88-ba0055109a4a" /><br>
-📤 Query Output <br>
-<img width="900" alt="Screenshot 2025-07-02 at 11 17 21 AM" src="https://github.com/user-attachments/assets/f1ed82f2-8b1d-47e8-a580-c8209f0d4351" />
-
-## 🔎 Final Conclusion & Recommendations
-
-
-
-
-
-
-<h1>II. Data Visualization with Python</h1>
 - MoM Retention Rate for Customer Transaction Data <br>
-<img width="829" alt="Screenshot 2025-05-12 at 09 35 44" src="https://github.com/user-attachments/assets/0472e084-7b7c-41b0-a584-d3158f6265fa" />
-<h1>III. Insights</h1>
+<img width="950" alt="Screenshot 2025-05-12 at 09 35 44" src="https://github.com/user-attachments/assets/0472e084-7b7c-41b0-a584-d3158f6265fa" />
+
+## [🔍 Final Conclusion & Recommendations](#-final-conclusion--recommendations) 
+<h1>Final Conclusions</h1>
 <ul>
   <li>Customers who register and place their first order in July 2017 have a high retention rate (up to 48.1%) after 5 months of operation. </li>
   <li>Customers who register and place their first order in April 2047 have a stable and relatively high retention rate: 45.1% (4th month), 42.1% (5th month), and 42.7% (7th month).</li>
