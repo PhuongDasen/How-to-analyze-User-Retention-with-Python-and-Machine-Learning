@@ -67,7 +67,7 @@ promotions.</li>
 <img width="950" alt="Screenshot 2025-05-12 at 09 35 44" src="https://github.com/user-attachments/assets/0472e084-7b7c-41b0-a584-d3158f6265fa" />
 
 ## [🔍 Final Conclusion & Recommendations](#-final-conclusion--recommendations) 
-<h1>Final Conclusions</h1>
+<h2>Final Conclusions</h2>
 <ul>
   <li>Customers who register and place their first order in July 2017 have a high retention rate (up to 48.1%) after 5 months of operation. </li>
   <li>Customers who register and place their first order in April 2047 have a stable and relatively high retention rate: 45.1% (4th month), 42.1% (5th month), and 42.7% (7th month).</li>
@@ -76,7 +76,7 @@ promotions.</li>
   <li>Customer who place orders at the beginning of January and February only show stablility, nothing special.</li>
   <li>KPMG's year-to-date retention rate is quite good, all 30% or more (except 11st month at 25.5%)</li>
 </ul>
-<h1>Recommendations</h1>
+<h2>Recommendations</h2>
 <ul>
   <li>There should be attractive preferential policies for customers in the first months of the year to increase teh order rate (retention) over the months.</li>
   <li>The Mid-year months have higher retention rates than other months -> need to dive into why (with relevant data, and visualizatin of other data) to apply to other months of the year.</li>
